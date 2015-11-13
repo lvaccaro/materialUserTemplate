@@ -1,0 +1,90 @@
+<!--<div class="container">
+  <div class="row">
+    <div class="center-form panel">
+      <div class="panel-body">
+        <h2 class="text-center">Log in</h2>
+        <form method="post" ng-submit="login()" name="loginForm">
+          <div class="form-group has-feedback">
+            <input class="form-control input-lg" type="text" name="email" ng-model="user.email" placeholder="Email" required autofocus>
+            <span class="ion-at form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input class="form-control input-lg" type="password" name="password" ng-model="user.password" placeholder="Password" required>
+            <span class="ion-key form-control-feedback"></span>
+          </div>
+          <button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-lg  btn-block btn-success">Log in</button>
+          <br/>
+          <p class="text-center text-muted">
+            <small>Don't have an account yet? <a href="./#/signup">Sign up</a></small>
+          </p>
+          <div class="signup-or-separator">
+            <h6 class="text">or</h6>
+            <hr>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+
+<link rel="stylesheet" href="stylesheets/login.css">
+<header>
+</header>
+
+<md-content flex id="content" class="login">
+
+
+  <div flex layout="column" tabIndex="-1" role="main" >
+    <md-content flex id="content1">
+
+
+      <form method="post" ng-submit="login()" name="loginForm" style="width:auto;">
+        <div id="u" class="form-group">
+          <input id="username" spellcheck=false class="form-control" name="email" ng-model="user.email" type="text" size="18" alt="login" required autofocus>
+          <span class="form-highlight"></span>
+          <span class="form-bar"></span>
+          <label for="username" class="float-label">Email</label>
+          <erroru>
+            Username is required
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24h-24z" fill="none"/>
+                <path d="M1 21h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </i>
+          </erroru>
+          <span class="ion-at form-control-feedback"></span>
+        </div>
+        <div id="p" class="form-group">
+          <input id="password" class="form-control" spellcheck=false name="password" ng-model="user.password" type="password" size="18" alt="login" required>
+          <span class="form-highlight"></span>
+          <span class="form-bar"></span>
+          <label for="password" class="float-label">Password</label>
+          <errorp>
+            Password is required
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24h-24z" fill="none"/>
+                <path d="M1 21h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </i>
+          </errorp>
+          <span class="ion-key form-control-feedback"></span>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="rem">
+          <label for="rem">Stay Signed in</label>
+          <button id="submit" type="submit" ng-disabled="loginForm.$invalid"  ripple>Log in</button>
+
+        </div>
+      </form>
+      <footer><a href="#/register">Create an account</a></footer>
+    </md-content>
+  </div>
+
+</md-content>
+
+

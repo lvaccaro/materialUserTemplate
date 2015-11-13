@@ -1,0 +1,34 @@
+
+<div class="container" >
+
+  <md-content >
+    <section class="layout-wrap layout-sm-column layout-align-center-center layout-row" >
+        <img src="https://material.angularjs.org/latest/img/icons/angular-logo.svg" style="height:200px;">
+    </section>
+
+    <section class="layout-wrap layout-sm-column layout-align-center-center layout-row" >
+      USER TEMPLATE
+    </section>
+    <section class="layout-wrap layout-sm-column layout-align-center-center layout-row" >
+      <span>Template for user login and registration</span>
+    </section>
+    <section class="layout-wrap layout-sm-column layout-align-center-center layout-row" >
+      <span><i>author: Luca Vaccaro</i></span>
+    </section>
+
+    <br><br>
+    <section class="layout-wrap layout-sm-column layout-align-center-center layout-row">
+      <a class="md-raised md-button md-ink-ripple" type="button" ng-href="#" ng-if="isAuthenticated()">
+        <span class="ng-scope" ng-model="user.email">{{user.email}}</span>
+        <div class="md-ripple-container"></div>
+      </a>
+      <a class="md-raised md-button md-ink-ripple" type="button" ng-href="#/login" ng-if="!isAuthenticated()">
+        <span class="ng-scope">ACCESS</span>
+        <div class="md-ripple-container"></div>
+      </a>
+    </section>
+
+
+</md-content>
+
+</div>
